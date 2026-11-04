@@ -12,6 +12,7 @@ module = importlib.import_module("39_transpose_matrix")
     ([[1], [2], [3]], [[1, 2, 3]]),
     ([], []),
     ([[], []], []),
+    ([[]], []),
 ])
 def test_transpose_matrix(matrix, expected):
     original = [row.copy() for row in matrix]
