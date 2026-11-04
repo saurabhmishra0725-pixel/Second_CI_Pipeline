@@ -12,6 +12,7 @@ module = importlib.import_module("33_first_non_repeating")
     ("", None),
     ("Aa", "A"),
     ("a a", " "),
+    ("!!🙂🙂é", "é"),
 ])
 def test_first_non_repeating(text, expected):
     assert module.first_non_repeating(text) == expected
