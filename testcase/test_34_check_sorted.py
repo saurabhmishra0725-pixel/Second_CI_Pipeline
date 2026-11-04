@@ -13,6 +13,7 @@ module = importlib.import_module("34_check_sorted")
     ([3, 2, 1], False),
     ([], True),
     ([5], True),
+    ((1, 2, 3), True),
 ])
 def test_is_sorted(numbers, expected):
     assert module.is_sorted(numbers) is expected
