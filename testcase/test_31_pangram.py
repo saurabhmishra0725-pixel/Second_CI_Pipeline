@@ -8,6 +8,7 @@ module = importlib.import_module("31_pangram")
 @pytest.mark.parametrize("text, expected", [
     ("The quick brown fox jumps over the lazy dog", True),
     ("ABCDEFGHIJKLMNOPQRSTUVWXYZ! 123", True),
+    ("ábcdefghijklmnopqrstuvwxyz", False),
     ("Hello World", False),
     ("abcdefghijklmnopqrstuvwxy", False),
     ("", False),
