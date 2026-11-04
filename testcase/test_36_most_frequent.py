@@ -12,6 +12,7 @@ module = importlib.import_module("36_most_frequent")
     ([-1, -1, 0], -1),
     (["apple", "pear", "apple"], "apple"),
     ([7], 7),
+    ([(1, 2), (3, 4), (1, 2)], (1, 2)),
     ([], None),
 ])
 def test_most_frequent(items, expected):
